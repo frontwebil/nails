@@ -1,4 +1,3 @@
-import React from 'react';
 import { Link } from 'react-router-dom';
 import { ChevronLeft, Sparkles, Shield, MapPin, Award, Clock, Heart } from 'lucide-react';
 import { useLanguage } from '../contexts/LanguageContext';
@@ -45,21 +44,21 @@ function AboutPage() {
         <div className="mb-8">
           <Link to="/" className="inline-flex items-center text-pink-600 hover:text-pink-700">
             <ChevronLeft size={20} />
-            <span>{t('about.back')}</span>
+            <span>{t('nav.about')}</span>
           </Link>
         </div>
 
         {/* Hero Section */}
         <div className="relative rounded-xl overflow-hidden mb-12 h-[300px]">
           <img 
-            src="https://images.unsplash.com/photo-1610992015732-2449b76344bc?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1200&q=80"
-            alt={t('about.hero.alt')}
+            src="/api/placeholder/1200/300"
+            alt={t('hero.welcome')}
             className="w-full h-full object-cover"
           />
           <div className="absolute inset-0 bg-gradient-to-r from-pink-600/80 to-transparent flex items-center">
             <div className="text-white p-8">
-              <h1 className="text-4xl font-bold mb-4">{t('about.hero.title')}</h1>
-              <p className="text-xl">{t('about.hero.subtitle')} 💖</p>
+              <h1 className="text-4xl font-bold mb-4">{t('hero.welcome')}</h1>
+              <p className="text-xl">{t('hero.since')} 💖</p>
             </div>
           </div>
         </div>
@@ -67,32 +66,22 @@ function AboutPage() {
         {/* Main Content */}
         <div className="bg-white rounded-xl shadow-lg p-8 mb-12">
           <div className="max-w-3xl mx-auto">
-            <p className="text-lg text-gray-700 mb-6">
-              {t('about.welcome')}
-            </p>
-
-            <h2 className="text-2xl font-bold text-pink-600 mb-4">{t('about.services.title')}</h2>
-            <p className="text-gray-700 mb-6">
-              {t('about.services.description')}
-            </p>
-
+            <h2 className="text-2xl font-bold text-pink-600 mb-4">{t('features.title')}</h2>
+            
             <ul className="list-disc list-inside text-gray-700 mb-8 space-y-2">
-              <li>{t('about.services.list.1')}</li>
-              <li>{t('about.services.list.2')}</li>
-              <li>{t('about.services.list.3')}</li>
-              <li>{t('about.services.list.4')}</li>
-              <li>{t('about.services.list.5')}</li>
-              <li>{t('about.services.list.6')}</li>
+              <li>{t('category.manicure')}</li>
+              <li>{t('category.nails')}</li>
+              <li>{t('category.brows')}</li>
+              <li>{t('category.waxing')}</li>
+              <li>{t('category.sugaring')}</li>
+              <li>{t('category.facial')}</li>
+              <li>{t('category.lashes')}</li>
             </ul>
-
-            <p className="text-gray-700 mb-8">
-              {t('about.expertise')}
-            </p>
           </div>
         </div>
 
         {/* Features Grid */}
-        <h2 className="text-3xl font-bold text-center text-gray-800 mb-8">{t('about.why.title')}</h2>
+        <h2 className="text-3xl font-bold text-center text-gray-800 mb-8">{t('features.title')}</h2>
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
           {features.map((feature, index) => (
             <div key={index} className="bg-white rounded-xl shadow-lg p-6">
@@ -107,15 +96,13 @@ function AboutPage() {
 
         {/* CTA Section */}
         <div className="bg-pink-600 text-white rounded-xl p-8 text-center">
-          <h2 className="text-3xl font-bold mb-4">{t('about.cta.title')}</h2>
-          <p className="mb-6">
-            {t('about.cta.subtitle')}
-          </p>
+          <h2 className="text-3xl font-bold mb-4">{t('booking.title')}</h2>
+          <p className="mb-6">{t('thankyou.message')}</p>
           <Link 
             to="/"
             className="inline-block bg-white text-pink-600 px-8 py-3 rounded-md hover:bg-pink-50 transition-colors"
           >
-            {t('about.cta.button')}
+            {t('hero.book')}
           </Link>
         </div>
       </div>
