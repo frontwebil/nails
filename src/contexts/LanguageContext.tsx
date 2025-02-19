@@ -77,17 +77,6 @@ const translations = {
     'category.sugaring': 'Sugaring',
     'category.facial': 'Gesichtsbehandlungen',
     'category.lashes': 'Wimpernverlängerung',
-
-    // Success Page
-    'success.title': 'Buchung erfolgreich!',
-    'success.message': 'Vielen Dank für Ihre Buchung bei Ellanails Studio.',
-    'success.details': 'Ihre Buchungsdetails',
-    'success.date': 'Datum',
-    'success.time': 'Uhrzeit',
-    'success.service': 'Service',
-    'success.confirmation': 'Wir werden uns in Kürze bei Ihnen melden, um Ihren Termin zu bestätigen.',
-    'success.back': 'Zurück zur Startseite',
-    'success.follow': 'Folgen Sie uns auf Instagram'
   },
   en: {
     // Navigation
@@ -157,23 +146,12 @@ const translations = {
     'category.sugaring': 'Sugaring',
     'category.facial': 'Facial Treatments',
     'category.lashes': 'Eyelash Extensions',
-
-    // Success Page
-    'success.title': 'Booking Successful!',
-    'success.message': 'Thank you for booking with Ellanails Studio.',
-    'success.details': 'Your Booking Details',
-    'success.date': 'Date',
-    'success.time': 'Time',
-    'success.service': 'Service',
-    'success.confirmation': 'We will contact you shortly to confirm your appointment.',
-    'success.back': 'Back to Homepage',
-    'success.follow': 'Follow us on Instagram'
   }
 };
 
 const LanguageContext = createContext<LanguageContextType | undefined>(undefined);
 
-function LanguageProvider({ children }: { children: React.ReactNode }) {
+export function LanguageProvider({ children }: { children: React.ReactNode }) {
   const [language, setLanguage] = useState<Language>('de');
 
   const t = (key: string): string => {
@@ -187,12 +165,10 @@ function LanguageProvider({ children }: { children: React.ReactNode }) {
   );
 }
 
-function useLanguage() {
+export function useLanguage() {
   const context = useContext(LanguageContext);
   if (context === undefined) {
     throw new Error('useLanguage must be used within a LanguageProvider');
   }
   return context;
 }
-
-export { LanguageProvider, useLanguage };
