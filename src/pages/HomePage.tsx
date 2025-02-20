@@ -89,19 +89,19 @@ function HomePage() {
 
   const instagramPosts = [
     {
-      imageUrl: "./dist/nails/1.jpg",
+      imageUrl: "./nails/1.jpg",
       description: "Rote Maniküre – ein zeitloser Klassiker! ❤️✨",
       likes: 124,
       comments: 8
     },
     {
-      imageUrl: "./dist/nails/2.jpg",
+      imageUrl: "./nails/2.jpg",
       description: "✨ Ellanails Studio – mehr als nur Maniküre! ✨",
       likes: 156,
       comments: 12
     },
     {
-      imageUrl: "./dist/nails/3.jpg",
+      imageUrl: "./nails/3.jpg",
       description: "Baby Boomer Maniküre – Eleganz & Natürlichkeit für deine Nägel 💅✨",
       likes: 98,
       comments: 5
