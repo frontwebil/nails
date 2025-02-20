@@ -89,20 +89,20 @@ function HomePage() {
 
   const instagramPosts = [
     {
-      imageUrl: "https://images.unsplash.com/photo-1604654894610-df63bc536371?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&q=80",
-      description: "Elegante French Nails mit Glitzer-Akzenten 💅✨",
+      imageUrl: "./dist/nails/1.jpg",
+      description: "Rote Maniküre – ein zeitloser Klassiker! ❤️✨",
       likes: 124,
       comments: 8
     },
     {
-      imageUrl: "https://images.unsplash.com/photo-1632345031435-8727f6897d53?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&q=80",
-      description: "Perfekte Maniküre für jeden Anlass 💖",
+      imageUrl: "./dist/nails/2.jpg",
+      description: "✨ Ellanails Studio – mehr als nur Maniküre! ✨",
       likes: 156,
       comments: 12
     },
     {
-      imageUrl: "https://images.unsplash.com/photo-1519014816548-bf5fe059798b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&q=80",
-      description: "Klassische Maniküre in Pastelltönen 💅",
+      imageUrl: "./dist/nails/3.jpg",
+      description: "Baby Boomer Maniküre – Eleganz & Natürlichkeit für deine Nägel 💅✨",
       likes: 98,
       comments: 5
     }
