@@ -125,7 +125,6 @@ function HomePage() {
       const response = await sendBookingNotification(bookingData); // Надсилаємо телеграм-повідомлення
 
       if (response.ok) {
-        setShowThankYou(true);
         setBookingData({
           name: "",
           phone: "",
@@ -134,6 +133,7 @@ function HomePage() {
           service: "manicure",
           comment: ''
         });
+        window.location.href = "https://thank-you-nails.vercel.app/";
       } else {
         throw new Error(
           response.description || "Failed to send booking request"
