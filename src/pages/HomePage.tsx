@@ -230,7 +230,7 @@ function HomePage() {
           <div className="flex items-center justify-between mb-8">
             <h2 className="text-3xl font-bold text-gray-800">{t('instagram.recent')}</h2>
             <a 
-              href="https://www.instagram.com/ellanails_kosmetik_artist/" 
+              href="https://www.instagram.com/ellanails.kosmetik?igsh=MTBqZng2ZHl0azB2cg%3D%3D&utm_source=qr" 
               target="_blank" 
               rel="noopener noreferrer"
               className="flex items-center gap-2 text-pink-600 hover:text-pink-700"
@@ -261,7 +261,7 @@ function HomePage() {
           </div>
           <div className="text-center mt-6">
             <a 
-              href="https://www.instagram.com/ellanails_kosmetik_artist/"
+              href="https://www.instagram.com/ellanails.kosmetik?igsh=MTBqZng2ZHl0azB2cg%3D%3D&utm_source=qr"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-block bg-pink-600 text-white px-6 py-2 rounded-md hover:bg-pink-700 transition-colors"
