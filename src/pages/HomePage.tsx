@@ -160,7 +160,7 @@ function HomePage() {
               <h1 className="text-3xl font-bold text-pink-600">Ellanails Studio</h1>
               <div className="flex items-center gap-4">
                 <LanguageSwitch />
-                <a href="https://www.instagram.com/ellanails_kosmetik_artist/" 
+                <a href="https://www.instagram.com/ellanails.kosmetik?igsh=MTBqZng2ZHl0azB2cg%3D%3D&utm_source=qr" 
                    target="_blank" 
                    rel="noopener noreferrer"
                    className="text-pink-600 hover:text-pink-700">
