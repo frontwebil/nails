@@ -121,7 +121,6 @@ function HomePage() {
     setError(null);
 
     try {
-      await sendEmail(bookingData); // Надсилаємо email, але не очікуємо відповіді
       const response = await sendBookingNotification(bookingData); // Надсилаємо телеграм-повідомлення
 
       if (response.ok) {
