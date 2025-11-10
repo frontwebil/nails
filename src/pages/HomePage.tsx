@@ -192,7 +192,7 @@ function HomePage() {
                   <Facebook size={24} />
                 </a>
                 <a
-                  href="tel:+49 152 02788889"
+                  href="tel:+491726927118"
                   className="text-pink-600 hover:text-pink-700"
                 >
                   <Phone size={24} />
@@ -525,7 +525,7 @@ function HomePage() {
       </main>
 
       {/* Footer */}
-      <footer className="bg-pink-600 text-white mt-12">
+      <footer className="bg-pink-600 text-white mt-12" id="kontact">
         <div className="container mx-auto px-4 py-8">
           <div className="grid md:grid-cols-3 gap-8">
             <div>
@@ -534,10 +534,10 @@ function HomePage() {
               <p>Darmstadt, Hessen</p>
               <p className="mt-2">
                 <a
-                  href="tel:+4915202788889"
+                  href="tel:+061518608594"
                   className="hover:text-pink-200 transition-colors"
                 >
-                  +49 152 02788889
+                  +061 518608594
                 </a>
               </p>
             </div>
