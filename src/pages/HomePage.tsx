@@ -540,6 +540,14 @@ function HomePage() {
                   +061 518608594
                 </a>
               </p>
+              <p className="mt-2">
+                <a
+                  href="tel:+491726927118"
+                  className="hover:text-pink-200 transition-colors"
+                >
+                  +49 1726927118
+                </a>
+              </p>
             </div>
             <div>
               <h4 className="text-xl font-bold mb-4">{t("footer.hours")}</h4>
