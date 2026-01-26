@@ -24,7 +24,7 @@ function PriceListPage() {
         {
           nameDE: "1. Maniküre mit Gellack / Shellac",
           nameEN: "1. Manicure with Gel polish / Shellac",
-          price: "25 €",
+          price: "30 €",
           duration: language === "de" ? "40 Min." : "40 min",
         },
         {
@@ -54,13 +54,13 @@ function PriceListPage() {
         {
           nameDE: "6. Pediküre mit Gellack / Shellac",
           nameEN: "6. Pedicure with Gel polish / Shellac",
-          price: "39 €",
+          price: "44 €",
           duration: language === "de" ? "1 Std." : "1 hr",
         },
         {
           nameDE: "7. Pediküre mit Gel/Pulvergel",
           nameEN: "7. Pedicure with Gel/Powder gel",
-          price: "45 €",
+          price: "50 €",
           duration: language === "de" ? "1 Std. 15 Min." : "1 hr 15 min",
         },
         {
@@ -126,47 +126,47 @@ function PriceListPage() {
         {
           nameDE: "17. Neues Set mit Gel (ohne Farbe)",
           nameEN: "17. New set with gel (without color)",
-          price: "30 €",
+          price: "35 €",
         },
         {
           nameDE: "18. Neues Set mit Gel (mit Farbe)",
           nameEN: "18. New set with gel (with color)",
-          price: "33 €",
+          price: "38 €",
         },
         {
           nameDE: "19. Neues Set mit Pulver Gel (ohne Farbe)",
           nameEN: "19. New set with powder gel (without color)",
-          price: "30 €",
+          price: "35 €",
         },
         {
           nameDE: "20. Neues Set mit Pulver Gel (mit Farbe)",
           nameEN: "20. New set with powder gel (with color)",
-          price: "33 €",
+          price: "38 €",
         },
         {
           nameDE: "21. Neues Set mit Acryl (ohne Farbe)",
           nameEN: "21. New set with acrylic (without color)",
-          price: "30 €",
+          price: "35 €",
         },
         {
           nameDE: "22. Neues Set mit Acryl (mit Farbe)",
           nameEN: "22. New set with acrylic (with color)",
-          price: "33 €",
+          price: "38 €",
         },
         {
           nameDE: "23. Auffüllen mit Acryl",
           nameEN: "23. Refill with acrylic",
-          price: "29 €",
+          price: "34 €",
         },
         {
           nameDE: "24. Auffüllen mit Gel",
           nameEN: "24. Refill with gel",
-          price: "29 €",
+          price: "34 €",
         },
         {
           nameDE: "25. Auffüllen mit Pulver Gel",
           nameEN: "25. Refill with powder gel",
-          price: "29 €",
+          price: "34 €",
         },
         { nameDE: "26. Entfernen", nameEN: "26. Removal", price: "10 €" },
         {
