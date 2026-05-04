@@ -36,7 +36,7 @@ function PriceListPage() {
         {
           nameDE: "3. Maniküre mit Lack",
           nameEN: "3. Manicure with polish",
-          price: "20 €",
+          price: "25 €",
           duration: language === "de" ? "25 Min." : "25 min",
         },
         {
@@ -60,7 +60,7 @@ function PriceListPage() {
         {
           nameDE: "7. Pediküre mit Gel/Pulvergel",
           nameEN: "7. Pedicure with Gel/Powder gel",
-          price: "50 €",
+          price: "55 €",
           duration: language === "de" ? "1 Std. 15 Min." : "1 hr 15 min",
         },
         {
