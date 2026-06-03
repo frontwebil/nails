@@ -84,7 +84,7 @@ function PriceListPage() {
         {
           nameDE: "11. Fußnägel mit Gellack / Shellac",
           nameEN: "11. Toenails with Gel polish / Shellac",
-          price: "25 €",
+          price: "35 €",
           duration: language === "de" ? "30 Min." : "30 min",
         },
         {
