@@ -42,7 +42,7 @@ function PriceListPage() {
         {
           nameDE: "4. Pediküre ohne Lack",
           nameEN: "4. Pedicure without polish",
-          price: "20 €",
+          price: "25 €",
           duration: language === "de" ? "30 Min." : "30 min",
         },
         {
@@ -126,7 +126,7 @@ function PriceListPage() {
         {
           nameDE: "17. Neues Set mit Gel (ohne Farbe)",
           nameEN: "17. New set with gel (without color)",
-          price: "35 €",
+          price: "38 €",
         },
         {
           nameDE: "18. Neues Set mit Gel (mit Farbe)",
@@ -136,7 +136,7 @@ function PriceListPage() {
         {
           nameDE: "19. Neues Set mit Pulver Gel (ohne Farbe)",
           nameEN: "19. New set with powder gel (without color)",
-          price: "35 €",
+          price: "38 €",
         },
         {
           nameDE: "20. Neues Set mit Pulver Gel (mit Farbe)",
@@ -146,7 +146,7 @@ function PriceListPage() {
         {
           nameDE: "21. Neues Set mit Acryl (ohne Farbe)",
           nameEN: "21. New set with acrylic (without color)",
-          price: "35 €",
+          price: "38 €",
         },
         {
           nameDE: "22. Neues Set mit Acryl (mit Farbe)",
@@ -177,7 +177,7 @@ function PriceListPage() {
         {
           nameDE: "28. Neumodellage - Baby-Boomer",
           nameEN: "28. New sculpting - Baby Boomer",
-          price: "35 €",
+          price: "39 €",
         },
       ],
     },
