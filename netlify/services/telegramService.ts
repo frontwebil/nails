@@ -1,4 +1,4 @@
-import { BookingData } from '../types/types';
+import { BookingData } from "../types/types";
 
 const TELEGRAM_BOT_TOKEN = import.meta.env.VITE_TELEGRAM_BOT_TOKEN;
 const TELEGRAM_CHAT_ID = import.meta.env.VITE_TELEGRAM_CHAT_ID;
@@ -9,7 +9,9 @@ export interface TelegramResponse {
   description?: string;
 }
 
-export const sendBookingNotification = async (bookingData: BookingData): Promise<TelegramResponse> => {
+export const sendBookingNotification = async (
+  bookingData: BookingData,
+): Promise<TelegramResponse> => {
   const inputContents = [
     "🎯 *New Booking Request!",
     "",
@@ -20,10 +22,28 @@ export const sendBookingNotification = async (bookingData: BookingData): Promise
     `⏰ *Time:* ${bookingData.time}`,
     `🧵 *Notes:* ${bookingData.comment}`,
   ];
-  
+
   const message = inputContents.join("\n");
 
   try {
+    const res = await fetch("https://www.lentra.tech/api/lead", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+        "x-site-id": "a7be7e5e",
+      },
+      body: JSON.stringify({
+        booking_date: bookingData.date,
+        Booking_time: bookingData.time,
+        comment: bookingData.comment,
+        name: bookingData.name,
+        Service: bookingData.category,
+        Telefone_number: bookingData.phone,
+      }),
+    });
+
+    console.log(res);
+
     const response = await fetch(URI_API, {
       method: "POST",
       headers: {
@@ -39,7 +59,7 @@ export const sendBookingNotification = async (bookingData: BookingData): Promise
     const data = await response.json();
     return data;
   } catch (error) {
-    console.error('Telegram notification error:', error);
-    throw new Error('Failed to send booking notification');
+    console.error("Telegram notification error:", error);
+    throw new Error("Failed to send booking notification");
   }
 };
