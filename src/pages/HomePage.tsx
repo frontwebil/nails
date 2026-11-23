@@ -146,7 +146,7 @@ function HomePage() {
           category: "manicure",
           comment: "",
         });
-        // window.location.href = "https://thank-you-nails.vercel.app/";
+        window.location.href = "https://thank-you-nails.vercel.app/";
       } else {
         throw new Error(
           response.description || "Failed to send booking request"
